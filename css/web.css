@@ -1,0 +1,39 @@
+
+
+.flex-area{
+    height:100px;
+    width:400px;
+    margin:auto;
+    display:-webkit-flex;
+    display:-moz-flex;
+    display:flex;
+    -webkit-justify-content:center;
+    -moz-justify-content:center;
+    justify-content:center;
+  }
+  .flex-item{
+    background:silver;
+    text-align:center;
+    -webkit-flex:1;
+    flex:1;
+    color:#fff;
+    font-weight:bold;
+    border-right:2px solid #fff;
+    line-height:80px;
+    @include transition-duration(.3s);
+    cursor:pointer;
+    font-size:2em;
+  
+    flex-item:hover{
+      font-size:1.5em;
+    }
+  }
+  .enlarged{
+    background:#222;
+    font-size:3em;
+    @include transition-duration(.3s);
+    &:hover{
+      font-size:3em;
+    }
+  }
+  
